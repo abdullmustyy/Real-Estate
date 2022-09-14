@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="hero relative pt-20">
+    <section className="hero relative pt-24">
       <div className="container mx-auto">
         <div className="flex flex-col lg:w-3/5 items-start space-y-4 px-4 md:px-0">
           <h1 className="font-bold text-5xl md:text-7xl text-left">
@@ -24,7 +24,7 @@ export default function Hero() {
           src="https://github.com/abdullmustyy/Real-Estate/blob/main/src/assets/house-1.png?raw=true"
           alt="House 1"
           loading="lazy"
-          className="mt-10 -mt-1 lg:-mt-52 md:w-5/6"
+          className="-mt-1 lg:-mt-52 md:w-5/6"
         />
       </div>
     </section>
