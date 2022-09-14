@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-hero {
-    color: #d4d414;
+html {
+    scroll-behavior: smooth;
+}
+
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
 }

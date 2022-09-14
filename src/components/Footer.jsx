@@ -1,6 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="footer bg-re-gray py-20 mt-10">
+    <footer
+      className="footer bg-re-gray py-20 px-4 md:px-0 mt-10"
+      id="footer"
+    >
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-x-3 gap-y-10 md:gap-y-0 lg:gap-x-20">
           <div className="flex flex-col gap-y-5">

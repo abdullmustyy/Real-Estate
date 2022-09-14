@@ -1,8 +1,8 @@
 export default function Contact() {
   return (
-    <section className="contact py-32">
+    <section className="contact py-32" id="contact">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-x-20 gap-y-10 lg:gap-y-0 px-20 lg:px-0">
+        <div className="flex flex-col lg:flex-row gap-x-20 gap-y-10 lg:gap-y-0 px-4 lg:px-0 md:px-20">
           <img
             src="https://github.com/abdullmustyy/Real-Estate/blob/main/src/assets/house-2.png?raw=true"
             alt="House 2"

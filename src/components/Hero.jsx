@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="hero relative pt-20">
+    <section className="hero relative pt-20 px-4 md:px-0">
       <div className="container mx-auto">
         <div className="flex flex-col lg:w-3/5 items-center lg:items-start space-y-4">
           <h1 className="font-bold text-7xl text-center lg:text-left">

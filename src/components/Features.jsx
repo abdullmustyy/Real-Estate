@@ -2,7 +2,7 @@ import Feature from "./Feature";
 
 export default function Features() {
   return (
-    <section className="features bg-re-brown text-white py-20">
+    <section className="features bg-re-brown text-white py-20" id="services">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 md:gap-x-24 gap-y-14 md:gap-y-0">
         <Feature
           icon={<i className="ri-service-line ri-2x"></i>}
