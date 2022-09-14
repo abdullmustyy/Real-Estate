@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="hero relative pt-24">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:w-3/5 items-start space-y-4 px-4 md:px-0">
+        <div className="flex flex-col lg:w-3/5 items-start space-y-6 px-4 md:px-0">
           <h1 className="font-bold text-5xl md:text-7xl text-left">
             Turn A House To Your Home
           </h1>

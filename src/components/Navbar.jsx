@@ -1,11 +1,15 @@
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ darkMode, toggleDarkMode }) {
   const [hamMenu, setHamMenu] = useState(false);
 
   function toggleHamMemu() {
     setHamMenu((prevHamMenu) => !prevHamMenu);
   }
+
+  const darkModeStyles = {
+    backgroundColor: darkMode ? "#D9D849" : "#1b1b1b",
+  };
 
   return (
     <nav className="navbar container font-finlandica mx-auto py-5 md:pr-5 px-4 md:px-0 relative">
@@ -14,7 +18,32 @@ export default function Navbar() {
           <span>Real</span>
           <span className="text-re-green">Estate</span>
         </div>
-        <div className="navbar--nav container hidden md:flex items-center justify-end space-x-16 font-medium">
+
+        {/* Dark-mode buttom */}
+        {!darkMode && (
+          <button
+            class="bg-re-d-mode p-3 rounded-full text-white hover:bg-re-dh-mode active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
+            style={darkModeStyles}
+            onClick={toggleDarkMode}
+          >
+            <div className="flex items-center justify-center">
+              <i class="ri-contrast-2-fill ri-xl"></i>
+            </div>
+          </button>
+        )}
+
+        {darkMode && (
+          <button
+            class="bg-re-green p-3 rounded-full text-white hover:bg-re-d-green active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
+            onClick={toggleDarkMode}
+          >
+            <div className="flex items-center justify-center">
+              <i class="ri-sun-fill ri-xl"></i>
+            </div>
+          </button>
+        )}
+
+        <div className="navbar--nav containe hidden md:flex items-center justify-end space-x-16 font-medium">
           <a
             href="#"
             className="hover:border-b-2 border-re-green active:text-re-green focus:border-b-4"
