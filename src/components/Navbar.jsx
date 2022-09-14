@@ -12,7 +12,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
   };
 
   return (
-    <nav className="navbar container font-finlandica mx-auto py-5 md:pr-5 px-4 md:px-0 relative">
+    <nav className="navbar container font-finlandica mx-auto py-5 md:pr-5 px-4 md:px-0 relativ2">
       <div className="flex item-center justify-between">
         <div className="navbar--logo flex items-center space-x-1 font-bold">
           <span>Real</span>
@@ -22,7 +22,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
         {/* Dark-mode buttom */}
         {!darkMode && (
           <button
-            class="bg-re-d-mode p-3 rounded-full text-white hover:bg-re-dh-mode active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
+            class="bg-re-d-mode p-2 rounded-full text-white hover:bg-re-dh-mode active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
             style={darkModeStyles}
             onClick={toggleDarkMode}
           >
@@ -34,7 +34,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
 
         {darkMode && (
           <button
-            class="bg-re-green p-3 rounded-full text-white hover:bg-re-d-green active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
+            class="bg-re-green p-2 rounded-full text-white hover:bg-re-d-green active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
             onClick={toggleDarkMode}
           >
             <div className="flex items-center justify-center">
@@ -79,7 +79,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
         {/* Hambugger menu */}
         {!hamMenu && (
           <button
-            class="md:hidden bg-re-green p-3 rounded-full text-white hover:bg-re-d-green active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
+            class="md:hidden bg-re-green p-2 rounded-full text-white hover:bg-re-d-green active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
             onClick={toggleHamMemu}
           >
             <div className="flex items-center justify-center">
@@ -90,7 +90,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
 
         {hamMenu && (
           <button
-            class="md:hidden bg-re-green p-3 rounded-full text-white hover:bg-re-d-green active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
+            class="md:hidden bg-re-green p-2 rounded-full text-white hover:bg-re-d-green active:bg-re-dd-green focus:outline-none focus:ring focus:ring-re-brown"
             onClick={toggleHamMemu}
           >
             <div className="flex items-center justify-center">

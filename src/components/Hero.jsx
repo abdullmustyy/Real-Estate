@@ -19,12 +19,12 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="flex justify-end">
+      <div className="flex justify-end -mt-1 lg:-mt-52">
         <img
           src="https://github.com/abdullmustyy/Real-Estate/blob/main/src/assets/house-1.png?raw=true"
           alt="House 1"
           loading="lazy"
-          className="-mt-1 lg:-mt-52 md:w-5/6"
+          className="md:w-5/6"
         />
       </div>
     </section>
