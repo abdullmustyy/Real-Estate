@@ -102,8 +102,15 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
 
       {/* Mobile menu */}
       {hamMenu && (
-        <div>
-          <div className="absolute z-10 flex flex-col items-center self-end py-8 mt-8 space-y-6 font-medium bg-re-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <div
+          style={{
+            color: darkMode ? "white" : "",
+          }}
+        >
+          <div
+            style={{ background: darkMode ? "#494949" : "" }}
+            className="absolute z-10 flex flex-col items-center self-end py-8 mt-8 space-y-6 font-medium bg-re-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
             <a
               href="#"
               className="hover:border-l-2 border-re-green active:text-re-green focus:border-l-4"
