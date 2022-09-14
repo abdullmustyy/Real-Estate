@@ -2,9 +2,14 @@ export default function Contact() {
   return (
     <section className="contact py-32">
       <div className="container mx-auto">
-        <div className="flex gap-x-20">
-          <img src="src/assets/house-2.png" alt="House 2" className="w-1/2" />
-          <div className="flex flex-col justify-evenly">
+        <div className="flex flex-col lg:flex-row gap-x-20 gap-y-10 lg:gap-y-0 px-20 lg:px-0">
+          <img
+            src="https://github.com/abdullmustyy/Real-Estate/blob/main/src/assets/house-2.png?raw=true"
+            alt="House 2"
+            loading="lazy"
+            className="lg:w-1/2"
+          />
+          <div className="flex flex-col justify-evenly gap-y-5 lg:gap-y-0">
             <h2 className="font-semibold text-3xl">
               The Leading Real Estate Rental Marketplace
             </h2>
